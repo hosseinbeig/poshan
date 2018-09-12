@@ -1,0 +1,14 @@
+{
+  "name": "poshan",
+  "version": "1.0.0",
+  "description": "poem ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ -r"
+  },
+  "author": "Hossein Beigzadeh",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
