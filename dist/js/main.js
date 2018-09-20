@@ -4,6 +4,18 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
+function initMap() {
+  // The location of location
+  var location = { lat: 29.445149, lng: 55.682316 };
+  // The map, centered at location
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: location
+  });
+  // The marker, positioned at location
+  var marker = new google.maps.Marker({ position: location, map: map });
+}
+
 let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
