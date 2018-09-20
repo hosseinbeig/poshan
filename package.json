@@ -4,11 +4,14 @@
   "description": "poem ",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ -r"
+    "sass": "node-sass -w scss/ -o dist/css/ -r",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Hossein Beigzadeh",
   "license": "ISC",
+  "homepage": "https://hosseinbeig.github.io/poshan",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3"
   }
 }
