@@ -103,7 +103,7 @@ body {
   margin: 0;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../assets/img/raz2.jpg);
+    background: url(../assets/img/home.png);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
