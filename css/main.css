@@ -6,8 +6,8 @@
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
