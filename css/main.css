@@ -364,3 +364,28 @@ main {
     grid-template-columns: 1fr; }
   #gallery {
     font-size: 1rem; } }
+#pointer {
+  margin: -5px 0 0 15px;
+  animation: yourAnimation 2s infinite 0s ease-in-out;
+}
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(-1%);
+    opacity: 0.1;
+  }
+  25% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(0deg) translateY(-1%);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(4deg) translateY(-1%);
+    opacity: 0.3;
+  }
