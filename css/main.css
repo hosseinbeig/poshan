@@ -82,6 +82,12 @@
       color: #eece1a; }
 
 #pointer {
+   position: absolute;
+  z-index: 7;
+  left: 80px;
+  top: 30px;
+  font-size: 30px;
+  cursor: w-resize;
   margin: -5px 0 0 15px;
   animation: yourAnimation 2s infinite 0s ease-in-out;
 }
