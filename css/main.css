@@ -333,7 +333,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .newspaper {
     -webkit-column-count: 3;
     /* Chrome, Safari, Opera */
@@ -342,7 +342,7 @@ main {
     column-count: 3; }
   .carousel-item {
     width: 100%;
-    height: 700px;
+    height: 800px;
     overflow: visible; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
