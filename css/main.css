@@ -24,6 +24,44 @@
         background-color: #eece1a;
         transform: rotate(-45deg) translate(7px, -7px); }
 
+#pointer {
+   position: absolute;
+  z-index: 7;
+  left: 80px;
+  top: 30px;
+  font-size: 30px;
+  cursor: w-resize;
+  margin: -5px 0 0 15px;
+  animation: yourAnimation 2s infinite 0s ease-in-out;
+}
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(-1%);
+    opacity: 0.1;
+  }
+
+  25% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: rotate(0deg) translateY(-1%);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: rotate(4deg) translateY(-1%);
+    opacity: 0.3;
+  }
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -81,43 +119,7 @@
     .menu .nav-link:hover {
       color: #eece1a; }
 
-#pointer {
-   position: absolute;
-  z-index: 7;
-  left: 80px;
-  top: 30px;
-  font-size: 30px;
-  cursor: w-resize;
-  margin: -5px 0 0 15px;
-  animation: yourAnimation 2s infinite 0s ease-in-out;
-}
 
-@keyframes yourAnimation {
-  0% {
-    transform: rotate(0) translateY(-1%);
-    opacity: 0.1;
-  }
-
-  25% {
-    transform: rotate(5deg) translateY(0);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: rotate(0deg) translateY(-1%);
-    opacity: 1;
-  }
-
-  75% {
-    transform: rotate(5deg) translateY(0);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: rotate(4deg) translateY(-1%);
-    opacity: 0.3;
-  }
-}
 
 
 .nav-item:nth-child(1) {
@@ -173,12 +175,6 @@ h3 {
     padding: 0.2rem 1rem;
     text-align: right;
     background: rgba(73, 73, 73, 0.5); }
-
-p {
-  text-align: right; }
-
-h3 {
-  float: right; }
 
 a {
   color: #fff;
@@ -287,10 +283,15 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  padding: 5px;
+  margin: auto;
   background: #2b2b2b;
   color: #fff;
-  height: 100px; }
+  height: 70px;}
+
+#main-footer p {
+  margin: 0 auto;
+}
 
 .icons {
   margin: 0; }
