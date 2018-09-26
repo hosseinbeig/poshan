@@ -1,12 +1,20 @@
+#pointer {
+  position: absolute;
+  z-index: 7;
+  left: 80px;
+  top: 30px;
+  font-size: 30px;
+  cursor: w-resize; }
+
 .menu-btn {
   position: absolute;
   z-index: 7;
-  right: 35px;
+  left: 35px;
   top: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
-    width: 28px;
+    width: 35px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
@@ -135,12 +143,6 @@ h3 {
     text-align: right;
     background: rgba(73, 73, 73, 0.5); }
 
-p {
-  text-align: right; }
-
-h3 {
-  float: right; }
-
 a {
   color: #fff;
   text-decoration: none; }
@@ -163,7 +165,7 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 5px;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
@@ -247,10 +249,14 @@ main {
 
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  padding: 5px;
+  margin: auto;
   background: #2b2b2b;
   color: #fff;
-  height: 100px; }
+  height: 70px; }
+
+#main-footer p {
+  margin: 0 auto; }
 
 .icons {
   margin: 0; }
@@ -267,10 +273,11 @@ main {
   height: auto; }
 
 #art {
-  background-image: url(../assets/img/14.jpg);
+  height: 25vw;
+  padding: 5px;
+  background-image: url(../assets/img/khane.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 10rem; }
+  background-size: cover; }
 
 #art-text {
   background-color: rgba(17, 17, 11, 0.5);
@@ -287,12 +294,30 @@ main {
   padding: 25px;
   border-radius: 10px; }
 
-.d-flex {
-  border-top-right-radius: 50px; }
+#pointer {
+  margin: -5px 0 0 15px;
+  animation: yourAnimation 2s infinite 0s ease-in-out; }
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(-1%);
+    opacity: 0.1; }
+  25% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5; }
+  50% {
+    transform: rotate(0deg) translateY(-1%);
+    opacity: 1; }
+  75% {
+    transform: rotate(5deg) translateY(0);
+    opacity: 0.5; }
+  100% {
+    transform: rotate(4deg) translateY(-1%);
+    opacity: 0.3; } }
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .newspaper {
     -webkit-column-count: 3;
     /* Chrome, Safari, Opera */
@@ -301,7 +326,7 @@ main {
     column-count: 3; }
   .carousel-item {
     width: 100%;
-    height: 700px;
+    height: 800px;
     overflow: visible; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -347,6 +372,10 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 540px) {
+  main {
+    padding: 50px 7px 10px 5px; }
+  * {
+    font-size: 95%; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
